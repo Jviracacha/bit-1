@@ -115,7 +115,39 @@ body {
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.6); /* negro transparente */
+  background-color: rgba(255, 255, 255, 0.979); /* negro transparente */
   padding: 2rem;
   border-radius: 10px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* capa oscura */
+  z-index: -1;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.6); /* Negro con 60% de opacidad */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(2px);
 }

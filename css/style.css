@@ -102,3 +102,20 @@ nav a {
 nav a:hover {
   color: #84c5ff;
 }
+
+body {
+  background-image: url('../img/fondo-de-pagina.jpg');
+  background-size: cover;       /* Ajusta la imagen al tamaño de pantalla */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-attachment: fixed; /* Efecto parallax (opcional) */
+  color: white;                 /* Para que el texto sea legible sobre fondo oscuro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;            /* Asegura que el fondo cubra toda la pantalla */
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.6); /* negro transparente */
+  padding: 2rem;
+  border-radius: 10px;
+}

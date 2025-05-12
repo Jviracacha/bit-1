@@ -1,27 +1,93 @@
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  margin: 0;
+  color: #00ffff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #444;
+  margin-top: 2rem;
+}
+
+/* Media Queries para responsividad */
+
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 1.5rem;
   }
-  
-  @media (max-width: 575px) {
-    header h1 {
-      font-size: 1.5rem;
-    }
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
-  
-  @media (min-width: 576px) and (max-width: 767px) {
-    header h1 {
-      font-size: 2rem;
-    }
+  main {
+    padding: 1rem;
   }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    header h1 {
-      font-size: 2.5rem;
-    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  header h1 {
+    font-size: 2rem;
   }
-  
-  @media (min-width: 992px) {
-    header h1 {
-      font-size: 3rem;
-    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header h1 {
+    font-size: 2.5rem;
   }
+}
+
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}

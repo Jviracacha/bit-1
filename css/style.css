@@ -10,14 +10,14 @@ body {
 
 header {
   background-color: #1a1a1a;
-  padding: 1rem;
+  padding: 3rem;
   text-align: center;
   border-bottom: 2px solid #444;
 }
 
 header h1 {
   margin: 0;
-  color: #00ffff;
+  color: lab(42.78% -16.04 37.82);
 }
 
 nav ul {
@@ -103,16 +103,7 @@ nav a:hover {
   color: #84c5ff;
 }
 
-body {
-  background-image: url('../img/fondo-de-pagina.jpg');
-  background-size: cover;       /* Ajusta la imagen al tamaño de pantalla */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat; /* No repite la imagen */
-  background-attachment: fixed; /* Efecto parallax (opcional) */
-  color: white;                 /* Para que el texto sea legible sobre fondo oscuro */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;            /* Asegura que el fondo cubra toda la pantalla */
-}
+
 
 main {
   background-color: rgba(255, 255, 255, 0.979); /* negro transparente */
@@ -150,4 +141,79 @@ main {
   padding: 2rem;
   border-radius: 15px;
   backdrop-filter: blur(2px);
+}
+
+main.container {
+  background-color: rgba(0, 0, 0, 0.6); /* fondo negro translúcido */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+header img {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+header h1 {
+  text-shadow: 0 0 10px #0ff;
+  color: #0ff;
+}
+
+.btn-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #0ff;
+  color: #0ff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #0ff;
+  color: black;
+}
+
+
+
+/* ajuste de video*/
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4; /* Ajusta visibilidad */
+}
+
+/* Estilos para la sección de bienvenida */
+.welcome {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.welcome-content {
+  flex: 1; /* El contenido de texto ocupa un espacio flexible */
+  margin-right: 20px; /* Espacio entre el texto y la imagen */
+  max-width: 50%; /* Limita el ancho del texto a la mitad */
+}
+
+.welcome-image {
+  flex: 2; /* La imagen ocupa más espacio */
+  max-width: 50%; /* Limita el ancho de la imagen a la mitad */
+}
+
+.welcome-image img {
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  border-radius: 8px; /* Opcional: agrega bordes redondeados */
+}
+
+/* para el footer */
+
+footer a:hover {
+  text-decoration: underline;
+  color: #87cefa; /* Un celeste bonito tipo ciencia/espacio */
 }

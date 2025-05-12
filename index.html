@@ -1,55 +1,148 @@
-<!-- iniciamos nuestro index con la estruntura del html5-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- inserto el icono de la pagina-->
-  <link rel="icon" href="favicon.jpg" type="image/x-icon"/>
-  <title>Astrofísica y Física Pura</title>
-
-
-  <!-- enlazo el bootstrap para estilos--> 
-   <link rel="stylesheet" href="css/style.css">
+  <!-- colocamos el icono de la pagina-->
+  <link rel="icon" href="favicon.jpg" type="image/x-icon">
+  <title>El origen del universo</title>
+  <!-- En esta parte coloco el enlace a Bootstrap y abajo mi hoja de estilos por si quiero cambair algo -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
- <header class="container text-center my-4">
-  <div class="row align-items-center">
-    <div class="col-12">
-      <img src="/img/inicio.jpg" alt="Logo Galaxia" width="60" class="mb-2">
-      <h1 class="display-4 text-info fw-bold">Astrofísica y Física Pura</h1>
+  <!-- Encabezado y navegación comunes -->
+  <header class="container text-center my-4">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <h1 class="display-4 text-info fw-bold">El origen del universo</h1>
+      </div>
+    </div>
+    <nav class="mt-4">
+      <div class="btn-group flex-wrap" role="group">
+        <a href="index.html" class="btn btn-dark">Inicio</a>
+        <a href="estrellas-galaxias.html" class="btn btn-dark">Formación de Estrellas</a>
+        <a href="agujeros-oscuros.html" class="btn btn-dark">Agujeros Negros</a>
+        <a href="relatividad-tiempo.html" class="btn btn-dark">Relatividad</a>
+        <a href="origen-universo.html" class="btn btn-dark">Origen del Universo</a>
+      </div>
+    </nav>
+  <!--ingresamos el contenido multimedia para un video de fondo sobre el tema-->
+    <video autoplay muted loop playsinline class="bg-video">
+    <source src="video/video-fondo2.mp4" type="video/mp4">
+    </video>
+  </header>
+
+  <!-- Contenido específico de cada página -->
+ <main class="container">
+  <!-- Bienvenida al universo del conocimiento -->
+  <section class="welcome">
+    <div class="welcome-content">
+      <h1 class="mb-4">El origen del universo</h1>
+    <p class="lead">
+      Hace más de 13.800 millones de años, toda la materia y energía que conocemos estaba concentrada en un punto diminuto y extremadamente caliente. 
+      En un instante, una gran expansión —lo que hoy llamamos <strong>Big Bang</strong>— dio inicio al tiempo, al espacio y a todo lo que existe.
+    </p>
+    <p>
+      Desde ese momento, el universo no ha dejado de expandirse, enfriarse y evolucionar, formando galaxias, estrellas, planetas... y eventualmente, vida. 
+      Comprender su origen es explorar nuestras raíces cósmicas y hacernos parte de una historia que aún se está escribiendo.
+    </p>
+    </div>
+    <!-- Imagen al lado del texto -->
+    <div class="welcome-image">
+      <img src="/img/imagen-lateral2-inicio.jpg " alt="Imagen espacial" />
+    </div>
+  </section>
+
+  
+
+<section class="py-5 bg-purple">
+  
+  <div class="container text text-center">
+   <h2 class="mb-4">Descubre más<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"></h2>
+   
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/imagen-carrusel1.jpg" class="d-block w-100" alt="Imagen del espacio 1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/imagen-carrusel2.jpg" class="d-block w-100" alt="Imagen del espacio 2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/imagen-carrusel3.jpg" class="d-block w-100" alt="Imagen del espacio 3">
+    </div>
+    <div class="carousel-item">
+      <img src="img/imagen-carrusel4.jpg" class="d-block w-100" alt="Imagen del espacio 3">
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
 
-  <nav class="mt-4">
-    <div class="btn-group flex-wrap" role="group">
-      <a href="index.html" class="btn btn-dark">Inicio</a>
-      <a href="estrellas-galaxias.html" class="btn btn-dark">Formación de Estrellas</a>
-      <a href="agujeros-oscuros.html" class="btn btn-dark">Agujeros Negros</a>
-      <a href="exoplanetas-vida.html" class="btn btn-dark">Exoplanetas y Vida</a>
-      <a href="relatividad-tiempo.html" class="btn btn-dark">Relatividad</a>
-      <a href="origen-universo.html" class="btn btn-dark">Origen del Universo</a>
+
+</section>
+
+</main>
+
+  <!-- Pie de página común -->
+<footer class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="mb-4">¿Quieres aprender más sobre el origen del universo?</h2>
+    <p>Déjanos tus datos para enviarte contenido exclusivo sobre los comienzos del cosmos.</p>
+    <form id="registro-form" class="mt-4">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="interes" class="form-label">¿Qué te gustaría aprender?</label>
+        <textarea id="interes" name="interes" class="form-control" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+
+<div class="container mt-5">
+  <div class="row justify-content-center text-center">
+    <div class="col-md-4">
+      <ul class="list-unstyled">
+        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+        <li><a href="experiences.html" class="text-light text-decoration-none">Experiences</a></li>
+        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+      </ul>
     </div>
-  </nav>
-</header>
-git
-  <main class="container">
-    <!--<img src="/img/inicio.jpg" alt = "galaxia" style="max-width:100%;height: auto;"> -->
+  </div>
+    <div class="text-center mt-4">
+      <!-- Íconos sociales -->
+      <div class="text-center mt-3">
+        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+      </div>
 
-    <h2>Bienvenido al estudio sobre el origen del universo</h2>
-    <p>Desde tiempos inmemoriales hemos tratado de conocer cómo se formó el universo. La respuesta más común se basa en la teoría del Big Bang, pero no es la única.</p>
-    <p>La teoría más conocida sobre el origen del universo se centra en un cataclismo cósmico sin igual en la historia: el Big Bang. <br>
-    Esta teoría surgió de la observación del alejamiento a gran velocidad de otras galaxias respecto a la nuestra en todas direcciones, como si hubieran sido repelidas por una antigua fuerza explosiva.</p>
-  </main>
+      <!-- Mensaje final -->
+      <p class="mt-3">Explora el universo con nosotros</p>
+      <p>&copy; 2025 - Proyecto de Astrofísica by Viracacháj</p>
+    </div>
+  </div>
+  
+</footer>
 
-  <footer>
-    <p>&copy; 2025 - Proyecto de Astrofísica by Viracacháj - inicio </p>
-  </footer>
 
+  <!-- Scripts comunes -->
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>

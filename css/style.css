@@ -210,3 +210,7 @@ img {
   border-radius: 1rem;
   box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
 }
+
+.custom-carrusel-bg {
+  background-color: #030a29; /* Cambia este color a tu gusto */
+}

@@ -1,17 +1,23 @@
+<!-- iniciamos nuestro index con la estruntura del html5-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <!-- inserto el icono de la pagina-->
+  <link rel="icon" href="favicon.jpg" type="image/x-icon"/>
   <title>Astrofísica y Física Pura</title>
-  <link rel="icon" href="favicon.jpg" type="image/x-icon" />
 
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- enlazo el bootstrap para estilos--> 
+   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>
   <header>
-    <h1>🌌 Astrofísica y Física Pura</h1>
+    <header class="container text-center my-4"></header>
+    <h1>🌌 El origen del universo</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -24,13 +30,23 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Bienvenido al universo</h2>
-    <p>Explora los misterios del cosmos desde la física fundamental hasta los rincones más oscuros del espacio.</p>
+  <main class="container">
+    <img src="/img/inicio.jpg" alt = "galaxia" style="max-width:100%;height: auto;">
+
+    <h2>Bienvenido al estudio sobre el origen del universo</h2>
+    <p>Desde tiempos inmemoriales hemos tratado de conocer cómo se formó el universo. La respuesta más común se basa en la teoría del Big Bang, pero no es la única.</p>
+    <p>La teoría más conocida sobre el origen del universo se centra en un cataclismo cósmico sin igual en la historia: el Big Bang. <br>
+    Esta teoría surgió de la observación del alejamiento a gran velocidad de otras galaxias respecto a la nuestra en todas direcciones, como si hubieran sido repelidas por una antigua fuerza explosiva.</p>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 - Divulgación Científica Personal</p>
+    <p>&copy; 2025 - Proyecto de Astrofísica by Viracacháj - inicio </p>
   </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>

@@ -59,6 +59,8 @@ footer {
   margin-top: 2rem;
 }
 
+
+
 /* Media Queries para responsividad */
 
 @media (max-width: 575px) {
@@ -90,4 +92,13 @@ footer {
   header h1 {
     font-size: 3rem;
   }
+}
+
+
+
+nav a {
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #84c5ff;
 }

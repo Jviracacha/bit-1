@@ -16,9 +16,12 @@ wireframe básico
 ![alt text](image.png)
 
 maquetado
+https://www.figma.com/design/RR7rvj7fpbQdJvl82YcWef/Proyecto-UX-UI-Jonathan-Viracach%C3%A1?node-id=4-2&t=PVa418wchxhGW2eG-1 
+
+![alt text](image-2.png)
 ![alt text](image-1.png)
 
-
+/* Estructura del proyecto /*
 Estructura de directorios y archivos (minúsculas, sin acentos, sin espacios)
 HTML (más de un documento, contenido original)
 CSS (Implementación archivo externo)

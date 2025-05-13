@@ -1,12 +1,12 @@
-/* ========= Estilo general ========= */
+/*  Cuerpo general  */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #492291;
+  background-color: #1a1a2e;
+  color: #eaeaea;
   line-height: 1.6;
   position: relative;
-  color: #fff;
 }
 
 body::before {
@@ -20,7 +20,7 @@ body::before {
   z-index: -1;
 }
 
-/* ========= Encabezado ========= */
+/*  Encabezado  */
 header {
   background-color: rgba(3, 9, 39, 0.6);
   padding: 3rem;
@@ -32,6 +32,7 @@ header h1 {
   margin: 0;
   text-shadow: 0 0 10px rgb(0, 17, 255);
   color: rgb(4, 53, 19);
+  font-size: 3rem;
 }
 
 header img {
@@ -39,7 +40,7 @@ header img {
   border-radius: 50%;
 }
 
-/* ========= Navegación ========= */
+/*  Nav */
 nav ul {
   list-style: none;
   padding: 0;
@@ -53,18 +54,18 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #180546;
+  background-color: #e0dbeb;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  background-color: #ff7300;
+  background-color: #0e0105;
   color: #000;
 }
 
-/* ========= Contenido principal ========= */
+/*  Contenido ppal  */
 main {
   padding: 2rem;
   margin: auto;
@@ -75,10 +76,10 @@ main {
   backdrop-filter: blur(2px);
 }
 
-/* ========= Botones personalizados ========= */
+/*  Botones */
 .btn-dark {
   background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid rgb(0, 140, 255);
+  border: 1px solid rgb(182, 186, 221);
   color: rgb(25, 0, 255);
   transition: background-color 0.3s ease;
 }
@@ -88,7 +89,7 @@ main {
   color: black;
 }
 
-/* ========= Video de fondo ========= */
+/*  Video de fondo  */
 .bg-video {
   position: fixed;
   top: 0;
@@ -100,7 +101,7 @@ main {
   opacity: 0.4;
 }
 
-/* ========= Sección de bienvenida ========= */
+/* Diseño para bienvenida  */
 .welcome {
   display: flex;
   align-items: center;
@@ -108,14 +109,7 @@ main {
   margin: 20px 0;
 }
 
-.welcome-content {
-  flex: 1;
-  margin-right: 20px;
-  max-width: 50%;
-}
-
-.welcome-image {
-  flex: 2;
+.welcome-content, .welcome-image {
   max-width: 50%;
 }
 
@@ -125,7 +119,7 @@ main {
   border-radius: 8px;
 }
 
-/* ========= Footer ========= */
+/* Diseño para Footer  */
 footer {
   background-color: #1a1a1a;
   color: #aaa;
@@ -140,7 +134,7 @@ footer a:hover {
   color: #040425;
 }
 
-/* ========= Media Queries ========= */
+/* Aplicamos Media Queries para el diseño responsive*/
 @media (max-width: 575px) {
   header h1 {
     font-size: 1.5rem;
@@ -174,43 +168,14 @@ footer a:hover {
   }
 }
 
-
-body {
-  background-color: #1a1a2e;
-  color: #eaeaea;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3 {
-  color: #00aaff;
-}
-
-.btn-outline-primary {
-  border-color: #00aaff;
-  color: #00aaff;
-}
-
-.btn-outline-primary:hover {
-  background-color: #00aaff;
-  color: #fff;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.text-neon {
-  color: #00ccff;
-  text-shadow: 0 0 8px #00ccff, 0 0 16px #0077cc;
-}
-
-.fondo-translucido {
-  background-color: rgba(0, 0, 40, 0.7);
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
-}
+/*le colocamos estilos al contenido del carrusel*/
 
 .custom-carrusel-bg {
-  background-color: #030a29; /* Cambia este color a tu gusto */
+  background-color: #45497a;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
 }

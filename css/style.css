@@ -20,25 +20,15 @@ body::before {
   z-index: -1;
 }
 
-/*  Encabezado  */
-header {
-  background-color: rgba(3, 9, 39, 0.6);
-  padding: 3rem;
-  text-align: center;
-  border-bottom: 2px solid #444444;
-}
+
 
 header h1 {
   margin: 0;
-  text-shadow: 0 0 10px rgb(0, 17, 255);
-  color: rgb(4, 53, 19);
+  text-shadow: 0 0 10px rgb(39, 39, 88);
+  color: rgb(9, 19, 38);
   font-size: 3rem;
 }
 
-header img {
-  box-shadow: 0 0 15px rgba(1, 9, 46, 0.6);
-  border-radius: 50%;
-}
 
 /*  Nav */
 nav ul {
@@ -54,14 +44,14 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #e0dbeb;
+  background-color: #04000d;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  background-color: #0e0105;
+  background-color: #29040f;
   color: #000;
 }
 
@@ -72,20 +62,20 @@ main {
   max-width: 800px;
   background-color: rgba(3, 9, 39, 0.6);
   border-radius: 15px;
-  text-shadow: 1px 1px 3px rgba(9, 30, 87, 0.9);
+  text-shadow: 1px 1px 3px rgba(9, 87, 15, 0.9);
   backdrop-filter: blur(2px);
 }
 
 /*  Botones */
 .btn-dark {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid rgb(182, 186, 221);
-  color: rgb(25, 0, 255);
+  background-color: rgba(55, 43, 143, 0.7);
+  border: 1px solid rgb(251, 251, 255);
+  color: rgb(4, 1, 22);
   transition: background-color 0.3s ease;
 }
 
 .btn-dark:hover {
-  background-color: rgb(0, 89, 255);
+  background-color: rgb(73, 216, 255);
   color: black;
 }
 

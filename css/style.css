@@ -70,7 +70,7 @@ main {
 .btn-dark {
   background-color: rgba(55, 43, 143, 0.7);
   border: 1px solid rgb(251, 251, 255);
-  color: rgb(4, 1, 22);
+  color: rgb(230, 229, 235);
   transition: background-color 0.3s ease;
 }
 
